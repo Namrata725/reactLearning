@@ -66,3 +66,30 @@ export default App;
 
 --------
 ```
+
+## 🧩 Adding a Reusable Header Component
+
+Now let's organize our code by creating a separate `Header` component and using it inside the `App` component.
+
+### 📄 `src/Header.jsx`
+
+```jsx
+function Header() {
+  return <h1>Header</h1>;
+}
+
+export default Header;
+
+import Header from './Header.jsx';
+
+function App() {
+  return (
+    <div>
+      <Header />
+        ..... other existing elemnts
+          </div>
+  );
+}
+
+export default App;
+```
