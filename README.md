@@ -120,6 +120,109 @@ This project is built using React.js and Vite.
 
 ---
 
+## What is a Component in React?
+
+A **component** in React is a **reusable piece of UI**. It works like a JavaScript function but returns JSX (HTML-like code).
+
+```jsx
+function Welcome() {
+  return <h1>Hello, Namrata!</h1>;
+}
+```
+
+---
+
+## How to Use a Component
+
+To use a component, call it like an HTML tag inside JSX:
+
+```jsx
+function App() {
+  return (
+    <div>
+      <Welcome />
+    </div>
+  );
+}
+
+function Welcome() {
+  return <h1>Hello, Namrata!</h1>;
+}
+```
+
+> Component names must start with an uppercase letter.
+
+---
+
+## Role of Components in React
+
+- Breaks the UI into **smaller, reusable pieces**
+- Makes code **clean, organized, and scalable**
+- Promotes **modular** design
+- Easier to **manage and debug**
+
+---
+
+## How to Write a Component
+
+### 1. Functional Component (common)
+
+```jsx
+function Greeting() {
+  return <h2>Welcome to my app!</h2>;
+}
+```
+
+Or with arrow function:
+
+```jsx
+const Greeting = () => <h2>Welcome to my app!</h2>;
+```
+
+### 2. Class Component (less common)
+
+```jsx
+import React, { Component } from "react";
+
+class Greeting extends Component {
+  render() {
+    return <h2>Welcome to my app!</h2>;
+  }
+}
+```
+
+---
+
+## Difference Between a Component and a Function
+
+| Aspect          | Function                          | Component                   |
+| --------------- | --------------------------------- | --------------------------- |
+| Purpose         | Performs logic and returns values | Returns JSX (UI)            |
+| Return Type     | Numbers, strings, etc.            | JSX (HTML-like structure)   |
+| Naming          | Can be lowercase                  | Must start with uppercase   |
+| React-specific? | No                                | Yes                         |
+| Used in JSX     | No                                | Yes, like `<MyComponent />` |
+
+### Example:
+
+**Component**
+
+```jsx
+function Header() {
+  return <h1>This is a header</h1>;
+}
+```
+
+**Regular Function**
+
+```js
+function add(a, b) {
+  return a + b;
+}
+```
+
+---
+
 ## My First React Code
 
 Once the project is set up, replace the content of `src/App.jsx` with the following code:
@@ -167,3 +270,5 @@ function App() {
 
 export default App;
 ```
+
+---
