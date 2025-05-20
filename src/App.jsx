@@ -1,14 +1,38 @@
-import Header from './Header.jsx';
-function App(){
-  return(
-    <div>
+import Header from "./Header.JSX"
 
-      <Header/>
-      <h1>Hello World</h1>
-      <h2>This is my first React App</h2>
-      <p>My name is namrata...</p>
+function App() {
+  return (
+    
+    <div>
+      <Header />
+      <h1>hello react</h1>
+      <h1>My name is namrata</h1>
+
+      <FruitList />
+      <hr />
+      <ColorList />
     </div>
+
   )
 }
 
+function FruitList() {
+  return (
+    <ul>
+      <li>Apple</li>
+      <li>Banana</li>
+      <li>Cherry</li>
+    </ul>
+  )
+}
+
+ function ColorList() {
+  return (
+    <ul>
+      <li>Red</li>
+      <li>Green</li>
+      <li>Blue</li>
+    </ul>
+  )
+}
 export default App
