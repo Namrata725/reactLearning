@@ -223,6 +223,53 @@ function add(a, b) {
 
 ---
 
+# ⚛️ Understanding JSX in React
+
+JSX (JavaScript XML) is a **syntax extension** for JavaScript used in React. It allows you to write HTML-like code directly inside JavaScript, making it easier to create React elements.
+
+---
+
+## ✅ What is JSX?
+
+JSX lets you write UI in a syntax similar to HTML, but with the full power of JavaScript.
+
+- You can embed expressions inside `{}`
+- It’s not mandatory, but it's widely used in React for simplicity and clarity
+- JSX is **compiled into `React.createElement()`** behind the scenes
+
+---
+
+## 💡 Example: Using JSX in a Component
+
+````jsx
+function Sum() {
+  let a = 2;
+  let b = 3;
+
+  return (
+    <p>
+      a = {a}
+      <br />
+      b = {b}
+      <br />
+      sum = {a + b}
+    </p>
+  );
+}
+
+function App() {
+  return (
+    <div>
+      <hr />
+      <Sum />
+    </div>
+  );
+}
+
+
+--------
+---
+
 ## My First React Code
 
 Once the project is set up, replace the content of `src/App.jsx` with the following code:
@@ -242,7 +289,7 @@ export default App;
 
 
 --------
-```
+````
 
 ## Adding a Reusable Header Component
 

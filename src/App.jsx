@@ -18,10 +18,12 @@ function App() {
       <hr />
       <h4>hello react</h4>
       <h4>My name is namrata</h4>
-
-      <FruitList />
+         <FruitList />
       <hr />
       <ColorList />
+
+      <hr />
+      <Sum />
     </div>
 
   )
@@ -46,4 +48,17 @@ function FruitList() {
     </ul>
   )
 }
+
+function Sum(){
+  
+  let a=2;
+  let b=3;
+ return( <p>a={a} 
+        <br />
+        b={b}
+        <br />
+         sum={a+b}</p>
+  )
+}
+
 export default App
