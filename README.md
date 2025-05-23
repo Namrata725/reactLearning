@@ -270,6 +270,7 @@ function App() {
 --------
 ---
 
+
 ## My First React Code
 
 Once the project is set up, replace the content of `src/App.jsx` with the following code:
@@ -319,3 +320,103 @@ export default App;
 ```
 
 ---
+
+# JSX Curly Braces Demo
+
+This React component demonstrates various ways to use **JSX curly braces** to embed JavaScript expressions inside JSX markup.
+
+##create `JSXCurlyBraces.jsx`
+
+---
+
+## Topics Covered
+
+### 1. User Variable
+
+Embed variables inside JSX:
+
+```jsx
+function MyName() {
+  const name = "World";
+  return <h4>Hello {name}!</h4>;
+}
+```
+
+---
+
+### 2. User function
+
+```jsx
+function ValidAge() {
+  const age = 25;
+  return age >= 18 ? <h4>You are an adult</h4> : <h4>You are a minor</h4>;
+}
+```
+
+---
+
+### 3. User condition
+
+```jsx
+function ValidAge() {
+  const age = 25;
+  if (age >= 18) return <h4>You are an adult</h4>; //condition inside JSX curly braces
+  return <h4>You are a minor</h4>;
+}
+```
+
+---
+
+### 4.Operation
+
+```jsx
+function operation(a, b, op) {
+  if (op === "+") return a + b;
+  if (op === "-") return a - b;
+  if (op === "*") return a * b;
+  if (op === "/") return a / b;
+}
+
+// Usage:
+<h4>Result = {operation(12, 3, "/")}</h4>;
+```
+
+---
+
+### 5. Object and Array
+
+```jsx
+const person = { name: "Namrata", age: 25 };
+
+<h4>
+  {person.name} is {person.age} years old.
+</h4>;
+
+const fruits = ["apple", "banana", "cherry"];
+
+<h4>First fruit: {fruits[0]}</h4>;
+```
+
+---
+
+### 6.HTML Tags
+
+```jsx
+const path = "https://m.media-amazon.com/images/I/714d2f9gQGL.jpg";
+
+<img src={path} alt="Example" style={{ width: "300px", height: "300px" }} />;
+```
+
+## at the end import file in app.jsx
+
+```jsx
+import JSXCurlyBraces from "./JSXCurlyBraces";
+
+function App() {
+  return (
+    <div>
+      <JSXCurlyBraces />
+    </div>
+  );
+}
+```

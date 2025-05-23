@@ -3,7 +3,9 @@ import Login from "./UserComponent"
 import {Profile} from "./UserComponent"
 import {Settings} from "./UserComponent"
 // import { Header } from "./Header.jsx" // named import
-// import { Login } from "./UserComponent" // named import
+// import { Login } from "./UserComponent" // named 
+
+import JSXCurlyBraces from "./JSXCurlyBraces.jsx" // named import
 
 function App() {
   return (
@@ -24,6 +26,9 @@ function App() {
 
       <hr />
       <Sum />
+
+      <hr />
+      <JSXCurlyBraces />
     </div>
 
   )
