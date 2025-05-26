@@ -179,18 +179,6 @@ Or with arrow function:
 const Greeting = () => <h2>Welcome to my app!</h2>;
 ```
 
-### 2. Class Component (less common)
-
-```jsx
-import React, { Component } from "react";
-
-class Greeting extends Component {
-  render() {
-    return <h2>Welcome to my app!</h2>;
-  }
-}
-```
-
 ---
 
 ## Difference Between a Component and a Function
@@ -223,13 +211,15 @@ function add(a, b) {
 
 ---
 
-# ⚛️ Understanding JSX in React
+---
+
+# Understanding JSX in React
 
 JSX (JavaScript XML) is a **syntax extension** for JavaScript used in React. It allows you to write HTML-like code directly inside JavaScript, making it easier to create React elements.
 
 ---
 
-## ✅ What is JSX?
+## What is JSX?
 
 JSX lets you write UI in a syntax similar to HTML, but with the full power of JavaScript.
 
@@ -239,9 +229,9 @@ JSX lets you write UI in a syntax similar to HTML, but with the full power of Ja
 
 ---
 
-## 💡 Example: Using JSX in a Component
+## Example: Using JSX in a Component
 
-````jsx
+```jsx
 function Sum() {
   let a = 2;
   let b = 3;
@@ -249,8 +239,7 @@ function Sum() {
   return (
     <p>
       a = {a}
-      <br />
-      b = {b}
+      <br />b = {b}
       <br />
       sum = {a + b}
     </p>
@@ -265,11 +254,9 @@ function App() {
     </div>
   );
 }
+```
 
-
---------
 ---
-
 
 ## My First React Code
 
@@ -290,7 +277,7 @@ export default App;
 
 
 --------
-````
+```
 
 ## Adding a Reusable Header Component
 
@@ -318,6 +305,8 @@ function App() {
 
 export default App;
 ```
+
+# file name: header.jsx
 
 ---
 
@@ -420,3 +409,66 @@ function App() {
   );
 }
 ```
+
+---
+
+# BtnClick React Component
+
+This is a simple React component that demonstrates:
+
+- JavaScript vs. React functions
+- Handling button clicks
+- Using arrow functions
+- Passing parameters to functions in `onClick` events
+
+---
+
+## 🔍 Topics Covered
+
+### 1. Difference Between JavaScript Function and React Function
+
+| JavaScript Function            | React Function (Component)        |
+| ------------------------------ | --------------------------------- |
+| Can exist anywhere in JS files | Specifically used for UI in React |
+| Returns any value              | Returns JSX                       |
+| Used for logic or utilities    | Used to define components         |
+| `function greet() {}`          | `function MyComponent() {}`       |
+
+---
+
+### 2. Steps
+
+#### Step 1: Make a Function
+
+```js
+function handleClick1() {
+  alert("Button clicked!");
+}
+```
+
+#### Step 2: Make a Button
+
+<button onClick={handleClick1}>Click Me</button>
+
+#### Step 3: Call an Arrow Function
+
+```js
+const handleClick2 = () => {
+  alert("Arrow function clicked!");
+};
+```
+
+#### Step 4: Pass Parameters to a Function
+
+```js
+const fruit = (name) => {
+  alert(name);
+};
+
+<button onClick={() => fruit("apple")}>Apple</button>
+<button onClick={() => fruit("banana")}>Banana</button>
+```
+
+---
+
+# file name: ClickHandler.jsx.

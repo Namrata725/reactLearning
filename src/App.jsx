@@ -6,7 +6,7 @@ import {Settings} from "./UserComponent"
 // import { Login } from "./UserComponent" // named 
 
 import JSXCurlyBraces from "./JSXCurlyBraces.jsx" // named import
-
+import ClickHandlers from "./ClickHandlers.jsx" // named import
 function App() {
   return (
     
@@ -29,6 +29,12 @@ function App() {
 
       <hr />
       <JSXCurlyBraces />
+
+      <hr />
+      <h2>Click Handlers</h2>
+      <ClickHandlers />
+      
+
     </div>
 
   )
