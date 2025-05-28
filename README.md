@@ -306,7 +306,7 @@ function App() {
 export default App;
 ```
 
-# file name: header.jsx
+### file name: header.jsx
 
 ---
 
@@ -423,7 +423,7 @@ This is a simple React component that demonstrates:
 
 ---
 
-## 🔍 Topics Covered
+## Topics Covered
 
 ### 1. Difference Between JavaScript Function and React Function
 
@@ -471,4 +471,32 @@ const fruit = (name) => {
 
 ---
 
-# file name: ClickHandler.jsx.
+### file name: ClickHandler.jsx.
+
+---
+
+### Upgrade React Version
+
+Upgrading React to a newer version involves the following steps:
+
+#### Steps to Upgrade React Version
+
+- Open `package.json ` file of your project
+- Update React Versions :
+
+```jsx
+"react": "current_version",
+"react-dom": "current_version"
+
+```
+
+Replace the versions with the desired React version. For example, to upgrade to React 18:
+
+```jsx
+
+"react": "^18.2.0",
+"react-dom": "^18.2.0"
+```
+
+- Delete node_modules and package-lock.json (optional but recommended)
+- Install Dependencies: `npm install`
